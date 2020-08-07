@@ -21,8 +21,24 @@
         $('.navbar-toggler:visible').click();
     });
 
-    $('#galleryModal').on('show.bs.modal', function (e) {
-       $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
-    });
+    stickyFooter();
+
+    $(window).scroll(stickyFooter).resize(stickyFooter);
 
 })(jQuery);
+
+function stickyFooter(){
+    document_height = $(document).height();
+    document_scrollTop = $(document).scrollTop();
+    window_height = $(window).height();
+    footer_height = $("footer").height();
+
+    gap = document_height - footer_height - window_height;
+    bottom = document_scrollTop - gap;
+
+    if(document_scrollTop > gap){
+        $("footer").css("bottom", bottom+"px");
+    } else{
+        $("footer").css("bottom","0");
+    }
+}
