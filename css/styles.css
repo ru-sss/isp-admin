@@ -107,6 +107,9 @@ aside {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding: 45px;
     padding-top: 40px;
     background-color: #e0e0e3;
@@ -212,7 +215,8 @@ footer h4, footer h6 {
 
 header {
     position: relative;
-    min-height: auto;
+/*    min-height: auto;*/
+    height: 100%
     text-align: center;
     color: #001A33;
     width: 100%;
