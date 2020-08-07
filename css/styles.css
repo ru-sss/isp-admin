@@ -314,9 +314,9 @@ textarea {
     background-color:#007FFF;
 }
 
-.btn-xl {
-    padding: 15px 30px;
-    font-size: 20px;
+.btn-md {
+    padding: 10px 20px;
+    font-size: 15px;
 }
 
 ::-moz-selection {
