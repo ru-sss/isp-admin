@@ -216,7 +216,7 @@ footer h4, footer h6 {
 header {
     position: relative;
 /*    min-height: auto;*/
-    height: 100%
+    height: 100%;
     text-align: center;
     color: #001A33;
     width: 100%;
