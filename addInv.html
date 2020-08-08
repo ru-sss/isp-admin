@@ -18,52 +18,97 @@
                 <div class="inner">
                     <form>
                       <fieldset>
-                        <legend>Legend</legend>
-                        <div class="form-group row">
-                          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
-                          </div>
-                        </div>
+                        <legend>투자자 등록</legend>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputPassword1">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleSelect1">Example select</label>
-                          <select class="form-control" id="exampleSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                          <label for="invType">투자자 타입</label>
+                          <select class="form-control" id="invType">
+                            <option>신규</option>
+                            <option>추가</option>
                           </select>
                         </div>
                         <div class="form-group">
-                          <label for="exampleSelect2">Example multiple select</label>
-                          <select multiple="" class="form-control" id="exampleSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                          <label for="inputName">이름</label>
+                          <input type="text" class="form-control" id="inputName"  placeholder="투자자 이름">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPhone">전화번호</label>
+                          <input type="number" class="form-control" id="inputPhone"  placeholder="전화번호">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputMType">입금 형태</label>
+                          <select class="form-control" id="inputMType">
+                            <option id="ifOpt1">현금</option>
+                            <option id="ifOpt2">카드</option>
+                          </select>
+                        </div>
+                        <div id="ifOpt1">
+                            <div class="form-group">
+                              <label for="inputAccNum">계좌번호</label>
+                              <input type="number" class="form-control" id="inputAccNum" placeholder="계좌번호">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAccName">입금자</label>
+                              <input type="text" class="form-control" id="inputAccName" placeholder="입금자명">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAccDate">입금일자</label>
+                              <input type="date" class="form-control" id="inputAccDate" placeholder="입금일자">
+                            </div>
+                        </div>
+                        <div id="ifOpt2">
+                            <div class="form-group">
+                              <label for="inputCardNum">카드번호</label>
+                              <input type="number" class="form-control" id="inputCardNum" placeholder="카드번호">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputCardDate">유효기간</label>
+                              <input type="date" class="form-control" id="inputCardDate" placeholder="유효기간">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputPersNum">주민등록번호 앞 6자리</label>
+                              <input type="number" class="form-control" id="inputPersNum" placeholder="주민등록번호 앞 6자리">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputCardPass">카드 비밀번호 앞 두자리</label>
+                              <input type="number" class="form-control" id="inputCardPass" placeholder="카드 비밀번호 앞 두자리">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputMSize">금액</label>
+                          <input type="number" class="form-control" id="inputMSize"  placeholder="금액">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputRecmnName">추천인 이름</label>
+                          <input type="text" class="form-control" id="inputRecmnName"  placeholder="추천인 이름">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAppDate">신청일자</label>
+                            <input type="date" class="form-control" id="inputAppDate" placeholder="신청일자">
+                        </div>
+                        <div class="form-group">
+                          <label for="centerType">센터</label>
+                          <select class="form-control" id="centerType">
+                            <option>센터1</option>
+                            <option>센터2</option>
                           </select>
                         </div>
                         <div class="form-group">
+                          <label for="DivType">배당금 타입</label>
+                          <select class="form-control" id="DivType">
+                            <option>3%</option>
+                            <option>2.5%/0.5%</option>
+                          </select>
+                        </div>
+<!--                         <div class="form-group">
                           <label for="exampleTextarea">Example textarea</label>
                           <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
+                        </div> -->
+<!--                         <div class="form-group">
                           <label for="exampleInputFile">File input</label>
                           <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
                           <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-                        </div>
-                        <fieldset class="form-group">
+                        </div> -->
+                        <!-- <fieldset class="form-group">
                           <legend>Radio buttons</legend>
                           <div class="form-check">
                             <label class="form-check-label">
@@ -103,7 +148,7 @@
                           <legend>Sliders</legend>
                           <label for="customRange1">Example range</label>
                           <input type="range" class="custom-range" id="customRange1">
-                        </fieldset>
+                        </fieldset> -->
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </fieldset>
                     </form>
