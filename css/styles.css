@@ -155,6 +155,7 @@ footer h4, footer h6 {
     font-size: 12px;
     color: #001A33;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .navbar .navbar-nav>li>a:hover,
@@ -247,6 +248,7 @@ header .header-content .inner p {
 header .header-content .inner .btn-md {
     padding: 10px 10px;
     font-size: 15px;
+    margin-bottom: 3%;
 }
 
 @media(min-width:34em) {
