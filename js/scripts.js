@@ -21,9 +21,9 @@
         $('.navbar-toggler:visible').click();
     });
 
-    stickyFooter();
+/*    stickyFooter();
 
-    $(window).scroll(stickyFooter).resize(stickyFooter);
+    $(window).scroll(stickyFooter).resize(stickyFooter);*/
 
 })(jQuery);
 
