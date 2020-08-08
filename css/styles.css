@@ -143,10 +143,6 @@ footer h4, footer h6 {
     color: #007FFF;
 }
 
-.navbar .navbar-toggle, .navbar .navbar-toggle:focus {
-    line-height: 1.90em;
-}
-
 .navbar .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #001A33;
 }
@@ -157,6 +153,7 @@ footer h4, footer h6 {
 .navbar .navbar-nav > li>a,
 .navbar .navbar-nav>li>a:focus {
     font-size: 12px;
+    font-weight: 600;
     color: #001A33;
     text-transform: uppercase;
     text-align: center;
@@ -169,7 +166,7 @@ footer h4, footer h6 {
 
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link.active:focus {
-    color: #007FFF;
+    color: #007FFF !important;
     background-color: transparent;
 }
 
@@ -180,7 +177,7 @@ footer h4, footer h6 {
         margin-left: .1rem;
     }
     .navbar .navbar-nav {
-        float:none;
+        float:none !important;
     }
 }
 
