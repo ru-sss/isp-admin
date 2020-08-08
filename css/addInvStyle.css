@@ -16,6 +16,11 @@ header .header-content .inner legend {
 	border-top: 1.3px solid #e0e0e3;
 }
 
+.form-control-display{
+	display: inline-block;
+	width: 30%;
+}
+
 label {
 	display: block;
 	margin-top: .3rem;
