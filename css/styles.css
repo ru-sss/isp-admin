@@ -246,6 +246,13 @@ header .header-content .inner p {
     color: #222;
 }
 
+header .header-content .inner legend {
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 header .header-content .inner .btn-md {
     padding: 10px 10px;
     font-size: 15px;

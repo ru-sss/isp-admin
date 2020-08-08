@@ -5,13 +5,6 @@ header .header-content {
     text-align: left !important;
 }
 
-header .header-content .inner legend {
-	margin-bottom: 2.5rem;
-	font-size: 1.6rem;
-	font-weight: 600;
-	text-align: center;
-}
-
 .form-group {
 	border-top: 1.3px solid #e0e0e3;
 }
