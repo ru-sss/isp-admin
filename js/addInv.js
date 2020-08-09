@@ -3,12 +3,6 @@
 
     var opt = $("#inputMType option:selected").val();
 
-    if(opt!=="0"){
-    	$("#"+opt).show();
-    } else {
-    	
-    }    
-
     $("#inputMType").change(function(){
 
 	    if(opt == "0"){
@@ -25,5 +19,13 @@
 	    }
 	    	
 	});
+
+    if(opt!=="0"){
+    	$("#"+opt).show();
+    } else {
+    	
+    }    
+
+
 
 })(jQuery);
