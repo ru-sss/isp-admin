@@ -16,5 +16,5 @@ label {
 }
 
 #ifOpt1, #ifOpt2 {
-	display: none;
+	display: none !important;
 }
