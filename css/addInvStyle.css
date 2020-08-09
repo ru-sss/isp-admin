@@ -14,3 +14,7 @@ label {
 	margin-top: .3rem;
 	font-size: 1.2rem;
 }
+
+#ifOpt1, #ifOpt2 {
+	display: none;
+}
