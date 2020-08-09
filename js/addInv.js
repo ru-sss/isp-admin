@@ -23,8 +23,7 @@
 	    	
 	    });
     } else {
-    	$("#ifOpt1").hide();
-    	$("#ifOpt2").hide();
+
     }    
 
 })(jQuery);
