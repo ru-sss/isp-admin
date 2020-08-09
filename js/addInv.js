@@ -10,6 +10,9 @@
 	    } else if(opt=="ifOpt2"){
 	    	$("#"+opt).slideDown("slow");
     		$("#ifOpt1").hide();
+	    } else if(opt=="0"){
+	    	$("#ifOpt1").hide();
+	    	$("#ifOpt2").hide();
 	    }
     })
     
