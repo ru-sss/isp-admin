@@ -1,4 +1,17 @@
 
+.table {
+	margin-bottom: 2rem !important;
+}
+
+.table thead th {
+	vertical-align: middle !important;
+	font-size: .9rem !important;
+}
+
+.table td, .table th {
+	padding: .4rem .1rem !important;
+	font-size: .8rem !important;
+}
 
 header .header-content {
     padding: 100px 15px !important;

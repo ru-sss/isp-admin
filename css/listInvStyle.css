@@ -1,8 +1,8 @@
 .form-check {
 	text-align: center;
+	margin-bottom: 0 !important;
 }
 
 .form-check-input {
 	margin-left: 0 !important;
-	margin-top: 1.50rem !important;
 }
