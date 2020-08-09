@@ -15,7 +15,100 @@
         <header id="first">
             <div class="header-content">
                 <div class="inner">
-
+                    <form class="invInfo">
+                      <fieldset disabled>
+                        <legend>투자 내역</legend>
+                        <div class="form-group">
+                          <label for="invType">투자자 타입</label>
+                          <select class="form-control" id="invType">
+                            <option>-----</option>
+                            <option>신규</option>
+                            <option selected="selected">추가</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName">이름</label>
+                          <input type="text" class="form-control" id="inputName"  placeholder="투자자 이름" value="홍길동">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPhone">전화번호</label>
+                          <input type="number" class="form-control" id="inputPhone"  placeholder="전화번호" value="01012341234">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputMType">입금 형태</label>
+                          <select class="form-control" id="inputMType">
+                            <option>-----</option>
+                            <option id="ifOpt1" selected="selected">현금</option>
+                            <option id="ifOpt2">카드</option>
+                          </select>
+                        </div>
+                        <div id="ifOpt1">
+                            <div class="form-group">
+                              <label for="inputAccNum">계좌번호</label>
+                              <input type="number" class="form-control" id="inputAccNum" placeholder="계좌번호" value="0293408531">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAccName">입금자</label>
+                              <input type="text" class="form-control" id="inputAccName" placeholder="입금자명" value="홍길동">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAccDate">입금일자</label>
+                              <input type="date" class="form-control" id="inputAccDate" placeholder="입금일자" value="2020-07-29">
+                            </div>
+                        </div>
+                        <div id="ifOpt2">
+                            <div class="form-group">
+                              <label for="inputCardNum">카드번호</label>
+                              <input type="number" class="form-control" id="inputCardNum" placeholder="카드번호">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputCardDateMth">유효기간</label>
+                              <input type="number" class="form-control col-sm-3 form-control-display" id="inputCardDateMth" placeholder="월">
+                              <span class="col-sm-3">/</span>
+                              <input type="number" class="form-control col-sm-3 form-control-display" id="inputCardDateYr" placeholder="년">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputPersNum">주민등록번호 앞 6자리</label>
+                              <input type="number" class="form-control" id="inputPersNum" placeholder="주민등록번호 앞 6자리">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputCardPass">카드 비밀번호 앞 두자리</label>
+                              <input type="number" class="form-control col-sm-3 form-control-display" id="inputCardPass" placeholder="**">
+                              <span class="col-sm-3">**</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputMSize">금액</label>
+                          <input type="number" class="form-control" id="inputMSize"  placeholder="금액" value="10,000,000">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputRecmnName">추천인 이름</label>
+                          <input type="text" class="form-control" id="inputRecmnName"  placeholder="추천인 이름" value="김나나">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAppDate">신청일자</label>
+                            <input type="date" class="form-control" id="inputAppDate" placeholder="신청일자" value="2020-07-29">
+                        </div>
+                        <div class="form-group">
+                          <label for="centerType">센터</label>
+                          <select class="form-control" id="centerType">
+                            <option>-----</option>
+                            <option selected="selected">센터1</option>
+                            <option>센터2</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="DivType">배당금 타입</label>
+                          <select class="form-control" id="DivType">
+                            <option>-----</option>
+                            <option selected="selected">3%</option>
+                            <option>2.5%/0.5%</option>
+                          </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">수정</button>
+                        <button type="submit" class="btn btn-danger">삭제</button>
+                      </fieldset>
+                    </form>
                 </div>
             </div>
         </header>
