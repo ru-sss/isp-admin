@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ISP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://ru-sss.github.io/isp-admin/css/styles.css" />
+    <link rel="stylesheet" href="https://ru-sss.github.io/isp-admin/css/common.css" />
+    <link rel="stylesheet" href="https://ru-sss.github.io/isp-admin/css/addInvStyle.css" />
+  </head>
+
+    <body class="bg-faded">
+        <header id="first">
+            <div class="header-content">
+                <div class="inner">
+                    <form>
+                      <fieldset>
+                        <legend>투자 내역</legend>
+                        <div class="form-group">
+                          <label for="invType">투자자 타입</label>
+                          <select class="form-control" id="invType">
+                            <option>-----</option>
+                            <option>신규</option>
+                            <option selected="selected">추가</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName">이름</label>
+                          <input type="text" class="form-control" id="inputName"  placeholder="투자자 이름" value="홍길동">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPhone">전화번호</label>
+                          <input type="number" class="form-control" id="inputPhone"  placeholder="전화번호" value="01012341234">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputMType">입금 형태</label>
+                          <select class="form-control" id="inputMType">
+                            <option>-----</option>
+                            <option id="ifOpt1" selected="selected">현금</option>
+                            <option id="ifOpt2">카드</option>
+                          </select>
+                        </div>
+                        <div id="ifOpt1">
+                            <div class="form-group">
+                              <label for="inputAccNum">계좌번호</label>
+                              <input type="number" class="form-control" id="inputAccNum" placeholder="계좌번호" value="0293408531">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAccName">입금자</label>
+                              <input type="text" class="form-control" id="inputAccName" placeholder="입금자명" value="홍길동">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAccDate">입금일자</label>
+                              <input type="date" class="form-control" id="inputAccDate" placeholder="입금일자" value="2020-07-29">
+                            </div>
+                        </div>
+                        <div id="ifOpt2">
+                            <div class="form-group">
+                              <label for="inputCardNum">카드번호</label>
+                              <input type="number" class="form-control" id="inputCardNum" placeholder="카드번호">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputCardDateMth">유효기간</label>
+                              <input type="number" class="form-control col-sm-3 form-control-display" id="inputCardDateMth" placeholder="월">
+                              <span class="col-sm-3">/</span>
+                              <input type="number" class="form-control col-sm-3 form-control-display" id="inputCardDateYr" placeholder="년">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputPersNum">주민등록번호 앞 6자리</label>
+                              <input type="number" class="form-control" id="inputPersNum" placeholder="주민등록번호 앞 6자리">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputCardPass">카드 비밀번호 앞 두자리</label>
+                              <input type="number" class="form-control col-sm-3 form-control-display" id="inputCardPass" placeholder="**">
+                              <span class="col-sm-3">**</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputMSize">금액</label>
+                          <input type="number" class="form-control" id="inputMSize"  placeholder="금액" value="10,000,000">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputRecmnName">추천인 이름</label>
+                          <input type="text" class="form-control" id="inputRecmnName"  placeholder="추천인 이름" value="김나나">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAppDate">신청일자</label>
+                            <input type="date" class="form-control" id="inputAppDate" placeholder="신청일자" value="2020-07-29">
+                        </div>
+                        <div class="form-group">
+                          <label for="centerType">센터</label>
+                          <select class="form-control" id="centerType">
+                            <option>-----</option>
+                            <option selected="selected">센터1</option>
+                            <option>센터2</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="DivType">배당금 타입</label>
+                          <select class="form-control" id="DivType">
+                            <option>-----</option>
+                            <option selected="selected">3%</option>
+                            <option>2.5%/0.5%</option>
+                          </select>
+                        </div>
+                      </fieldset>
+                    </form>
+                    <div class="btnWrap">
+                        <a href="#" class="btn btn-primary-outline">수정</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav id="topNav" class="navbar fixed-top navbar-toggleable-sm">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                    <span>☰</span>
+                </button>
+                <a class="navbar-brand page-scroll" href="https://ru-sss.github.io/isp-admin/">ISeePowerball</a>
+                <div class="collapse navbar-collapse" id="collapsingNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="https://ru-sss.github.io/isp-admin/addInv">투자자 등록</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="https://ru-sss.github.io/isp-admin/listInv">투자자 목록</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="https://ru-sss.github.io/isp-admin/todays">금일 배당금</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <footer id="footer">
+            <div class="container">
+                <span class="float-left text-muted small"><a href="#">Made by ru.sss</a></span>
+            </div>
+        </footer>
+
+
+        <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h2 class="text-center">Nice Job!</h2>
+                        <p class="text-center">You clicked the button, but it doesn't actually go anywhere because this is only a demo.</p>
+                        <p class="text-center"><a href="https://medium.com/@bootply/bootstrap-4-whats-new-visual-guide-c84dd81d8387">Learn More</a></p>
+                        <br>
+                        <button class="btn btn-primary btn-lg" data-dismiss="modal" aria-hidden="true">OK <i class="ion-android-close"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--scripts loaded here-->
+        
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script src="https://ru-sss.github.io/isp-admin/js/scripts.js"></script>
+    </body>
+</html>
