@@ -5,7 +5,8 @@
 
     if(opt!=="0"){
     	$("#"+opt).show();
-
+    	
+    } else {
     	$("#inputMType").change(function(){
 
 	    	if(opt == "0"){
@@ -22,8 +23,6 @@
 	    	}
 	    	
 	    });
-    } else {
-
     }    
 
 })(jQuery);
