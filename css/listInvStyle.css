@@ -10,3 +10,7 @@
 .al-center {
 	justify-content: center;
 }
+
+.page-link {
+	padding: .4rem .65rem !important;
+}
