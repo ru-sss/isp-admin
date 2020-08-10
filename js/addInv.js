@@ -1,12 +1,12 @@
 (function($) {
     "use strict";
 
-    var opt = $("#inputMType option:selected").val();
-
     $("#inputMType").change(function(){
 
-    	console.log(opt);
+    	var opt = $("#inputMType option:selected").val();
     	
+    	console.log(opt);
+
     	if(opt !== "0") {
     		console.log(opt);
 
