@@ -22,3 +22,16 @@ header .header-content {
 	width: 100%;
 	text-align: center;
 }
+
+.btnListWrap {
+	width: 100%;
+	text-align: right;
+}
+
+.btnListWrap a {
+	padding: .3rem .7rem;
+}
+
+.pagenationWrap {
+	margin-top: 1.5rem;
+}
