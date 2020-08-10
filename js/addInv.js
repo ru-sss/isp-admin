@@ -5,7 +5,15 @@
 
     $("#inputMType").change(function(){
 
-	    if(opt == "0"){
+    	if(opt !== "0") {
+    		$("#"+opt).slideDown("slow");
+    	} else {
+    		$("#ifOpt1").hide();
+	    	$("#ifOpt2").hide();
+    	}
+
+
+/*	    if(opt == "0"){
 	    	$("#ifOpt1").hide();
 	    	$("#ifOpt2").hide();
 	    } else {
@@ -16,7 +24,7 @@
 			    $("#"+opt).slideDown("slow");
 		    	$("#ifOpt1").hide();
 			}
-	    }
+	    }*/
 	    	
 	});
 
