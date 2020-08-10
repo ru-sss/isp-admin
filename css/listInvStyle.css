@@ -6,3 +6,7 @@
 .form-check-input {
 	margin-left: 0 !important;
 }
+
+.al-center {
+	justify-content: center;
+}
