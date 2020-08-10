@@ -5,7 +5,11 @@
 
     $("#inputMType").change(function(){
 
+    	console.log(opt);
+    	
     	if(opt !== "0") {
+    		console.log(opt);
+
     		$("#"+opt).slideDown("slow");
     	} else {
     		$("#ifOpt1").hide();
