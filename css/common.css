@@ -14,13 +14,14 @@
 }
 
 header .header-content {
-    padding: 100px 15px !important;
+    padding: 100px 15px 50px 15px !important;
     text-align: left !important;
 }
 
 .btnWrap {
 	width: 100%;
 	text-align: center;
+	margin-top: 1.5rem;
 }
 
 .btnListWrap {
