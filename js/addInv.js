@@ -2,7 +2,13 @@
     "use strict";
 
     $("#add_inv").click(function(){
-        console.log("checke");
+        console.log("click");
+        if($("#checkall").is(":checked")){
+            console.log("checked");
+        }
+        else{
+            console.log("nothing");
+        }
         // if($(this).is(":checked")){
         //     console.log("checke");
         // }
