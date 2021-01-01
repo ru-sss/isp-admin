@@ -1,6 +1,12 @@
 (function($) {
     "use strict";
 
+    $("#checkall").click(function(){
+        if($(this).is(":checked")){
+            alret("확인");
+        }
+    });
+
     var opt = $("#inputMType option:selected").val();
 
     if(opt !== "0") {
