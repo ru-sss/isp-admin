@@ -3,7 +3,7 @@
 
     $("#checkall").click(function(){
         if($(this).is(":checked")){
-            alret("확인");
+            console.log("checke");
         }
     });
 
