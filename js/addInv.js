@@ -2,9 +2,10 @@
     "use strict";
 
     $("#add_inv").click(function(){
-        if($(this).is(":checked")){
-            console.log("checke");
-        }
+        console.log("checke");
+        // if($(this).is(":checked")){
+        //     console.log("checke");
+        // }
     });
 
     var opt = $("#inputMType option:selected").val();
