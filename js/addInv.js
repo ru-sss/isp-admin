@@ -1,7 +1,7 @@
 (function($) {
     "use strict";
 
-    $("#checkall").click(function(){
+    $("#add_inv").click(function(){
         if($(this).is(":checked")){
             console.log("checke");
         }
