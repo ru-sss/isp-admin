@@ -5,7 +5,8 @@
         console.log("click");
         if($("#checkall").is(":checked")){
             console.log("checked");
-            location.href("https://ru-sss.github.io/isp-admin/listInv");
+            // window.location.href("https://ru-sss.github.io/isp-admin/listInv");
+            $(location).attr('href','https://ru-sss.github.io/isp-admin/listInv')
         }
         else{
             console.log("nothing");
